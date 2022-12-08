@@ -10,3 +10,4 @@ npm install typescript@ -de
 
 ./node_modules/.bin/tsc --init
 
+## 06:52
