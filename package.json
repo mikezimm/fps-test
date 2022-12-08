@@ -1,0 +1,22 @@
+{
+  "name": "fps-test",
+  "version": "1.0.0",
+  "description": "testing generic react component with scss",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"hello world\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikezimm/fps-test.git"
+  },
+  "author": "Mike Zimmerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikezimm/fps-test/issues"
+  },
+  "homepage": "https://github.com/mikezimm/fps-test#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
