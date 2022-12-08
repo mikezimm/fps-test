@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react",
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
@@ -103,7 +104,7 @@
   "include": [
     "src/**/*.ts",
     "index.ts",
-    "src/**/*.tsx",                                     /* 2022-12-07:  Added above AC video @6:43. */
+    "src/**/*.tsx",                                     /* 2022-12-07:  Added above AC video @6:43., REMOVED because it caused error in tables.tsx */
   ],
   "exclude": [
     "lib", "node_modules"
