@@ -14,7 +14,7 @@ export default class SourcePages extends React.Component<ISourcePagesProps, ISou
   public constructor(props:ISourcePagesProps){
     super(props);
     //Just so it's initialized as empty fromt he start
-    this._performance = {} as ILoadPerformance;
+    this._performance = SamplePerformance;
     this.state = {
     };
   }
@@ -24,7 +24,7 @@ export default class SourcePages extends React.Component<ISourcePagesProps, ISou
     this._performance = SamplePerformance;
   }
 
-  public componentDidUpdate(prevProps: ISourcePagesProps): void { }
+  public componentDidUpdate(_prevProps: ISourcePagesProps): void { }
 
   public render(): React.ReactElement<ISourcePagesProps> {
 

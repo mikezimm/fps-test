@@ -12,7 +12,7 @@
     // "disableReferencedProjectLoad": true,             /* Reduce the number of projects loaded automatically by TypeScript. */
 
     /* Language and Environment */
-    "target": "es5",                                      /* es2016   Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "target": "es6",                                      /* es2016   Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
     // "lib": [],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
     // "jsx": "preserve",                                /* Specify what JSX code is generated. */
     // "experimentalDecorators": true,                   /* Enable experimental support for TC39 stage 2 draft decorators. */
@@ -99,14 +99,18 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true,                                /* Skip type checking all .d.ts files. */
+    // "lib": [
+    //   "es6",
+    //   "dom"
+    // ],
   },
   "include": [
     "src/**/*.ts",
     "index.ts",
     "src/**/*.tsx",                                     /* 2022-12-07:  Added above AC video @6:43., REMOVED because it caused error in tables.tsx */
   ],
-  "exclude": [
-    "lib", "node_modules"
+  "exclude": [ 
+    "node_modules" 
   ]
 }

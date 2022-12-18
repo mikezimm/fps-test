@@ -7,6 +7,6 @@ export default class SourcePages extends React.Component<ISourcePagesProps, ISou
     private _performance;
     constructor(props: ISourcePagesProps);
     componentDidMount(): Promise<void>;
-    componentDidUpdate(prevProps: ISourcePagesProps): void;
+    componentDidUpdate(_prevProps: ISourcePagesProps): void;
     render(): React.ReactElement<ISourcePagesProps>;
 }

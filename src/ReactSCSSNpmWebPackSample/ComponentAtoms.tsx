@@ -2,7 +2,7 @@ import * as React from 'react';
 
 import { IPerformanceOp, ILoadPerformance, ILoadPerformanceOps, LoadPerformanceOps, IMinPerformanceSetting } from './IPerformance';
 
-import styles from './tables.modules.scss';
+import styles from './tables.module.scss';
 
 export function createPerformanceRows( performance: ILoadPerformance, keysToShow: ILoadPerformanceOps[] ) { //[ 'fetch', 'analyze' ]
 
@@ -27,7 +27,7 @@ export function createPerformanceRows( performance: ILoadPerformance, keysToShow
 
         // This works :)
         const sets: any = performance.sets;
-        const thisPart : IMinPerformanceSetting | undefined = sets[ part ];
+        const thisPart : IMinPerformanceSetting | undefined = sets ? sets[part] : undefined;
         if ( thisPart ) {
           loadRows.push( <tr>
             <td>{ thisPart.label }</td>
@@ -36,7 +36,7 @@ export function createPerformanceRows( performance: ILoadPerformance, keysToShow
         }
       } else {
         const ops: any = performance.ops;
-        const thisPart : IPerformanceOp | undefined = ops[part];
+        const thisPart : IPerformanceOp | undefined = ops ? ops[part] : undefined;
 
         if ( thisPart ) {
           let time: string = thisPart.startStr;
